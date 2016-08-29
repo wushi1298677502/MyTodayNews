@@ -1,0 +1,1 @@
+include ':app', ':xlistviewlibrary', ':Android-imageSlider-viktor-library', ':android-slidingmenu-library', ':android-volley-libaray', ':JCModule'

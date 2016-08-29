@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/content_ToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/red1"
+
+        app:title="今日新闻"
+        app:titleTextColor="@color/blue"
+        app:navigationIcon="@drawable/ic_action_back"/>
+    <FrameLayout
+        android:id="@+id/contentActivity_framlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_ToolBar"></FrameLayout>
+  </RelativeLayout>
