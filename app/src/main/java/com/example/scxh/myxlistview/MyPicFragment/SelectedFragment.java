@@ -71,7 +71,7 @@ public class SelectedFragment extends Fragment   implements XListView.IXListView
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         url = getArguments()==null?null:getArguments().getString("MESSAGE");
-        mPageNo = getArguments()==null?null:getArguments().getInt("NUM");
+//        mPageNo = getArguments()==null?null:getArguments().getInt("NUM");
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -194,16 +194,17 @@ public class SelectedFragment extends Fragment   implements XListView.IXListView
             int num = pics.getPicTemplate();
             return num;
         }
-
+        // 类型从0开始
         public View getView(int i, View view, ViewGroup viewGroup) {
-            int type = getItemViewType(i);
-            if (type == 1) {
+            int type = getItemViewType(i)-1;
+            Logs.e("type>>>"+type);
+            if (type == 0) {
                 return getOnePic(i, view, viewGroup);
-            } else if (type == 2) {
+            } else if (type == 1) {
                 return getTwoPic(i, view, viewGroup);
-            } else if (type == 3) {
+            } else if (type == 2) {
                 return getThreePic(i, view, viewGroup);
-            } else if(type == 4) {
+            } else if(type == 3) {
                 return getFourPic(i, view, viewGroup);
             }else {
                 return getOnePic(i, view, viewGroup);

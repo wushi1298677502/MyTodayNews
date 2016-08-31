@@ -34,7 +34,7 @@ public class MainTableFragment extends Fragment implements View.OnClickListener,
             "http://api.sina.cn/sinago/list.json?channel=hdpic_toutiao&adid=4ad30dabe134695c3b7c3a65977d7e72&wm=b207&from=6042095012&chwm=12050_0001&oldchwm=&imei=867064013906290&uid=802909da86d9f5fc&p=",
             "http://api.sina.cn/sinago/list.json?channel=hdpic_funny&adid=4ad30dabe134695c3b7c3a65977d7e72&wm=b207&from=6042095012&chwm=12050_0001&oldchwm=12050_0001&imei=867064013906290&uid=802909da86d9f5fc&p=",
             "http://api.sina.cn/sinago/list.json?channel=hdpic_pretty&adid=4ad30dabe134695c3b7c3a65977d7e72&wm=b207&from=6042095012&chwm=12050_0001&oldchwm=12050_0001&imei=867064013906290&uid=802909da86d9f5fc&p=",
-            "http://api.sina.cn/sinago/list.json?channel=hdpic_story&adid=4ad30dabe134695c3b7c3a65977d7e72&wm=b207&from=6042095012&chwm=12050_0001&oldchwm=12050_0001&imei=867064013906290&uid=802909da86d9f5fc&p="
+            "http://api.sina.cn/sinago/list.json?channel=hdpic_story&adid=4ad30dabe134695c3b7c3a65977d7e72&wm=b207&from=6042095012&chwm=12050_0001&oldchwm=12050_0001&imei=867064013906290&uid=802909da86d9f5fc&p=",
     };
     public MainTableFragment() {
         // Required empty public constructor
@@ -88,10 +88,12 @@ public class MainTableFragment extends Fragment implements View.OnClickListener,
                     break;
                 case R.id.maintable_beauty:
                     mViewPager.setCurrentItem(2);
+                    Logs.e("maintable_beauty");
                     beauty.setBackgroundResource(R.color.red);
                     break;
                 case R.id.maintable_story:
                     mViewPager.setCurrentItem(3);
+                    Logs.e("maintable_story");
                     story.setBackgroundResource(R.color.red);
                     break;
 
@@ -144,6 +146,7 @@ public class MainTableFragment extends Fragment implements View.OnClickListener,
         }
         @Override
         public Fragment getItem(int position) {
+            Logs.e("getItem  postion >>> :"+position);
             return SelectedFragment.newInstance(str[position],position);
         }
 

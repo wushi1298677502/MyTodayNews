@@ -3,11 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android-imageSlider-viktor-library/Android-imageSlider-viktor-library.iml" filepath="$PROJECT_DIR$/Android-imageSlider-viktor-library/Android-imageSlider-viktor-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JCModule/JCModule.iml" filepath="$PROJECT_DIR$/JCModule/JCModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyTodayNews.iml" filepath="$PROJECT_DIR$/MyTodayNews.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-slidingmenu-library/android-slidingmenu-library.iml" filepath="$PROJECT_DIR$/android-slidingmenu-library/android-slidingmenu-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-volley-libaray/android-volley-libaray.iml" filepath="$PROJECT_DIR$/android-volley-libaray/android-volley-libaray.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JCModule/jcmodule.iml" filepath="$PROJECT_DIR$/JCModule/jcmodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/xlistviewlibrary/xlistviewlibrary.iml" filepath="$PROJECT_DIR$/xlistviewlibrary/xlistviewlibrary.iml" />
     </modules>
   </component>
